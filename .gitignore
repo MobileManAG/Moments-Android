@@ -1,4 +1,7 @@
-local.properties
-build
+/local.properties
+/build
 /bin/
+/.idea/workspace.xml
+/.idea/libraries
+.gradle
 .DS_Store
