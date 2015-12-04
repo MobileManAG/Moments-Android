@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- for FB overlay only-->
+    <dimen name="thumbnailWidth_fixed">1200px</dimen>
+    <dimen name="thumbnailHeight_fixed">630px</dimen>
+
+    <dimen name="activity_horizontal_margin_fixed">32px</dimen>
+    <dimen name="activity_vertical_margin_fixed">32px</dimen>
+    <dimen name="shortVerticalMargin_fixed">22px</dimen>
+    <dimen name="shortHorizontalMargin_fixed">20px</dimen>
+    <dimen name="imageFrameSize_fixed">160px</dimen>
+    <dimen name="fixed_12">36px</dimen>
+    <dimen name="fixed_14">42px</dimen>
+    <dimen name="fixed_16">48px</dimen>
+    <dimen name="fixed_20">60px</dimen>
+    <dimen name="fixed_22">66px</dimen>
+    <dimen name="fixed_24">72px</dimen>
+    <!-- End-->
+
+    <dimen name="stream_list_marginTop">0dp</dimen>
+
+    <dimen name="nav_bar_margin">0dp</dimen>
+    <dimen name="status_bar_margin">0dp</dimen>
+
+    <dimen name="broadcast_live_banner_width">190dp</dimen>
+
+
+    <dimen name="buttonTextSize">25sp</dimen>
+    <dimen name="settingsTextSize">25dp</dimen>
+    <dimen name="defaultTextSize">25dp</dimen>
+    <dimen name="titleTextSize">50sp</dimen>
+    <dimen name="settingsListViewDividerHeight">1dp</dimen>
+    <dimen name="shortHorizontalMargin">5dp</dimen>
+    <dimen name="shortVerticalMargin">6dp</dimen>
+    <dimen name="imageFrameSize">48dp</dimen>
+    <dimen name="smallImageFrameSize">32dp</dimen>
+    <dimen name="titleHeaderHeight">56dp</dimen>
+    <dimen name="buttonMinimalWidth">140dp</dimen>
+    <dimen name="buttonMinimumHeight">48dp</dimen>
+    <dimen name="streamHeaderTextSize">18sp</dimen>
+    <dimen name="streamHeaderSmallTextSize">12sp</dimen>
+    <dimen name="streamHeaderLineHeight">26dp</dimen>
+    <dimen name="buttonRowHeight">60dp</dimen>
+    <dimen name="commentsRowHeight">40dp</dimen>
+    <dimen name="watchersRowHeight">40dp</dimen>
+    <dimen name="myFriendsRowHeight">72dp</dimen>
+    <dimen name="titleBarTextSize">25dp</dimen>
+    <dimen name="addCommentEditHeight">48dp</dimen>
+
+
+    <dimen name="style12">12sp</dimen>
+    <dimen name="style14">14sp</dimen>
+    <dimen name="style16">16sp</dimen>
+    <dimen name="style20">20sp</dimen>
+    <dimen name="style24">24sp</dimen>
+    <dimen name="style34">34sp</dimen>
+    <dimen name="style4">4sp</dimen>
+    <dimen name="style2">2sp</dimen>
+</resources>

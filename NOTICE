@@ -1,0 +1,14 @@
+    Project Moments iOS
+    Copyright (C) 2015 Copyright 2015 MobileMan GmbH, www.mobileman.com
+
+    This product includes following software:
+    
+    (The Apache Software License, Version 2.0) Kickflip SDK for Android (https://github.com/Kickflip/kickflip-android-sdk)
+    (GNU Library or Lesser General Public License version 3.0) M3u8 Parser (http://sourceforge.net/projects/m3u8parser/)
+    (Lesser GNU Public License) FindBugs (http://findbugs.sourceforge.net/)
+    (The Apache Software License, Version 2.0) Jackson (https://github.com/codehaus/jackson)
+    (The Apache Software License, Version 2.0) google-gson (https://github.com/google/gson)
+    (The Apache Software License, Version 2.0) Google OAuth Client Library for Java (https://github.com/google/google-oauth-java-client)
+    (GNU Lesser General Public License, Version 2.1) FFmpegWrapper-Android (https://github.com/OpenWatch/FFmpegWrapper-Android)
+    (The Apache Software License, Version 2.0) AWS SDK for Android (https://github.com/aws/aws-sdk-android)
+    

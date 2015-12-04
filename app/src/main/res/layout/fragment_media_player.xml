@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.mobileman.moments.android.frontend.fragments.MediaPlayerFragment">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/mediaPlayerBackgroundImageView"
+        />
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include layout="@layout/media_player_header"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:indeterminateDrawable="@drawable/kickflip_progress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_gravity="center"/>
+
+    <include layout="@layout/media_player_footer"/>
+
+</FrameLayout>

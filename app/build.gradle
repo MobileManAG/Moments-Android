@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0"
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 19
+        versionCode 43
+        versionName "1.1.33"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+}
+
+configurations {
+    jaxDoclet
+    classpaths
+}
+
+
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.android.support:support-v4:19.+'
+    // google-oauth-java-client
+    compile files('libs/google-http-client-1.17.0-rc.jar')
+    compile files('libs/google-http-client-android-1.17.0-rc.jar')
+    compile files('libs/google-http-client-jackson2-1.17.0-rc.jar')
+    compile files('libs/google-oauth-client-1.17.0-rc.jar')
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/jsr305-1.3.9.jar')
+    // m3u8 parser
+    compile files('libs/m3u8parser-0.2.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // For Doclava JavaDoc
+    jaxDoclet("com.google.doclava:doclava:1.0.5")
+    //classpaths files('build/classes/release')
+    classpaths fileTree(dir: 'build/classes/release').matching {
+        include 'io/kickflip/sdk/Kickflip.java'
+    }
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+    compile 'com.facebook.android:facebook-android-sdk:4.2.0'
+    // aws-sdk-android
+    compile files('libs/aws-android-sdk-core-2.2.1.jar')
+    compile files('libs/aws-android-sdk-s3-2.2.1.jar')
+}
+
+// Maven publish task
+// Uncomment this line to enable publishing to Maven Central. Requires maven
+// credentials in gradle.properties
+//apply from: 'https://raw.github.com/OnlyInAmerica/mvn-repo/master/maven.gradle'

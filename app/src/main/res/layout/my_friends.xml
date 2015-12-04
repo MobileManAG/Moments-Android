@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobileman.moments.android.frontend.SlidingRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myFriendsHeaderLayout"
+        android:background="@color/momentsBlue">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/arrow"
+            android:id="@+id/myFriendsHeaderBackImageView"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@null"
+            android:layout_gravity="center_vertical" />
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            style="@style/Moments.Semibold24"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titleHeaderHeight"
+            android:text="My friends"
+            android:id="@+id/myFriendsTitlebarText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_gravity="left|center_vertical" />
+    </FrameLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myFriendsListview"
+        android:layout_below="@+id/myFriendsHeaderLayout"
+        android:layout_above="@+id/myFriendsInviteButton"
+        android:background="@color/settingsWhiteBackground"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="@dimen/settingsListViewDividerHeight"
+        />
+    <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+        style="@style/Moments.Semibold20"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/buttonRowHeight"
+        android:text="Invite Facebook friends"
+        android:background="@color/greenTransparent84"
+        android:textColor="@drawable/white_focused_gray"
+        android:id="@+id/myFriendsInviteButton"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</com.mobileman.moments.android.frontend.SlidingRelativeLayout>

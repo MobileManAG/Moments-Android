@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainFrameLayout"
+    >
+
+    <include layout="@layout/live_preview"/>
+
+    <View android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:background="@color/transparentBlue84"
+            android:layout_gravity="center"
+        />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mobileman.moments.android.frontend.activity.MainActivity"
+        >
+
+    </FrameLayout>
+
+    <include layout="@layout/record_button"
+        android:id="@+id/noInternetConnectionView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/buttonRowHeight"
+        android:layout_gravity="center_horizontal|bottom"
+        />
+
+
+
+</FrameLayout>

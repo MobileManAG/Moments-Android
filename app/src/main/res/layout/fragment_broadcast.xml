@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobileman.moments.android.frontend.activity.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fragmentBroadcastMainLayout"
+    tools:context="io.kickflip.sdk.fragment.BroadcastFragment"
+    >
+    <io.kickflip.sdk.view.GLCameraEncoderView
+        android:id="@+id/cameraPreview"
+        android:background="@color/transparentBlue84"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <include layout="@layout/media_player_header"/>
+
+   <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+        style="@style/Moments.Semibold20"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/buttonRowHeight"
+        android:text="@string/notifyingFriends"
+        android:background="@color/yellowTransparent84"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/preparingBroadcastTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <include layout="@layout/media_player_footer"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/bandwithTooLowLayout"
+        android:visibility="gone"
+        >
+        <TextView
+            style="@style/Moments.Semibold16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/bandwidthTooLow"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+            <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+                style="@style/Moments.Semibold20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:minWidth="@dimen/buttonMinimalWidth"
+                android:minHeight="@dimen/buttonMinimumHeight"
+                android:textColor="@android:color/white"
+                android:background="@color/transparentBlue84"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/shortVerticalMargin"
+                android:paddingBottom="@dimen/shortVerticalMargin"
+                android:id="@+id/bandwithTooLowCancelButton"
+                />
+
+<!--            <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+                style="@style/Moments.Semibold20.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ignore"
+                android:minWidth="@dimen/buttonMinimalWidth"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:minHeight="@dimen/buttonMinimumHeight"
+                android:background="@color/yellowTransparent84"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/shortVerticalMargin"
+                android:paddingBottom="@dimen/shortVerticalMargin"
+                android:id="@+id/bandwithTooLowRetryButton"
+                />
+-->
+        </LinearLayout>
+    </LinearLayout>
+</com.mobileman.moments.android.frontend.activity.CustomFrameLayout>
+

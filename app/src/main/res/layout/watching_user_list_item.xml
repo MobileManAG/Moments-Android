@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/smallImageFrameSize"
+    android:layout_marginRight="@dimen/shortHorizontalMargin"
+    >
+    <ImageView
+        android:id="@+id/mediaPlayerHeaderWatchingUserImageView"
+        android:layout_width="@dimen/smallImageFrameSize"
+        android:layout_height="@dimen/smallImageFrameSize"
+        android:visibility="visible"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user"
+        />
+</RelativeLayout>

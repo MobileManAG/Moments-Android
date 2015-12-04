@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobileman.moments.android.frontend.SlidingRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingsWhiteBackground"
+    >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myMomentsHeaderLayout"
+        android:background="@color/momentsBlue">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/arrow"
+            android:id="@+id/myMomentsHeaderBackImageView"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@null"
+            android:layout_gravity="center_vertical" />
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            style="@style/Moments.Semibold24"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titleHeaderHeight"
+            android:text="My Moments"
+            android:id="@+id/myMomentsTitlebarText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_gravity="left|center_vertical" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/myMomentsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_below="@+id/myMomentsHeaderLayout"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp" />
+
+</com.mobileman.moments.android.frontend.SlidingRelativeLayout>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mobileman.moments.android.frontend.activity.MainActivity" >
+    
+    <item android:id="@+id/action_broadcast"
+        android:title="Broadcast"
+        android:icon="@drawable/ic_broadcast"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+</menu>

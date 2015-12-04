@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/streamListMainLayout"
+    >
+
+    <include layout="@layout/logo"/>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragmentStreamFooter"
+        android:layout_below="@+id/logoView">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@android:id/empty"
+        style="@style/KFEmptyListText"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/logoView"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/fragmentStreamFooter" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/fragmentStreamFooter"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/buttonRowHeight"
+            android:orientation="vertical"
+            android:background="@color/whiteInactive"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:id="@+id/fragmentStreamFacebookLogoImageView"
+                android:src="@drawable/f_white"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/shortVerticalMargin" />
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@drawable/white_focused_gray"
+                android:text="Post: On"
+                android:id="@+id/fragmentsStreamFacebookPostingStateTextView"
+                android:gravity="center" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray"
+             />
+        <com.mobileman.moments.android.frontend.custom.EditTextCustomFont
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/Moments.Semibold20"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/buttonRowHeight"
+            android:id="@+id/broadcastingTitleEditText"
+            android:textColorHint="@android:color/white"
+            android:hint="What's up?"
+            android:gravity="center"
+            android:maxLength="300"
+            android:singleLine="true"
+            android:background="@color/whiteInactive"
+            android:maxLines="1"
+            android:minLines="1" />
+
+        <include layout="@layout/record_button"
+            android:id="@+id/recordButton"
+            ></include>
+    </LinearLayout>
+
+
+</RelativeLayout>

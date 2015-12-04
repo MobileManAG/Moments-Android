@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/incomingCallThumbnailImageView"
+        android:layout_gravity="center"
+        />
+    <View
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@color/transparentBlue84"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/incomingCallHeaderLayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:id="@+id/incomingCallUserImageView"
+            android:layout_gravity="center_horizontal" />
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            style="@style/Moments.Semibold34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mike Ditka"
+            android:id="@+id/incomingCallUserNameTextView"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            style="@style/Moments.Regular16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sharingLiveMoments"
+            android:id="@+id/textView4"
+            android:layout_marginTop="@dimen/shortVerticalMargin"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="center_horizontal|bottom"
+        >
+        <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+            style="@style/Moments.Semibold20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonPass"
+            android:minWidth="@dimen/buttonMinimalWidth"
+            android:minHeight="@dimen/buttonMinimumHeight"
+            android:textColor="@drawable/white_focused_gray"
+            android:background="@color/transparentBlue84"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/shortVerticalMargin"
+            android:paddingBottom="@dimen/shortVerticalMargin"
+            android:id="@+id/dismissButton"
+            />
+
+        <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+            style="@style/Moments.Semibold20.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonWatch"
+            android:minWidth="@dimen/buttonMinimalWidth"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:minHeight="@dimen/buttonMinimumHeight"
+            android:background="@color/yellowTransparent84"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@drawable/black_focused_gray"
+            android:paddingTop="@dimen/shortVerticalMargin"
+            android:paddingBottom="@dimen/shortVerticalMargin"
+            android:id="@+id/watchButton"
+            />
+
+    </LinearLayout>
+
+    <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+        style="@style/Moments.Semibold24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incomingCallStreamTitleTextView"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+
+</FrameLayout>

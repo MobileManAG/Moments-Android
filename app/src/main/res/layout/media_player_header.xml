@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mediaPlayerHeaderLayout"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleHeaderHeight"
+        android:id="@+id/mediaPlayerHeaderView"
+        android:background="@color/transparentBlue84"
+        >
+
+        <ImageView
+            android:id="@+id/mediaPlayerHeaderImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/imageFrameSize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:visibility="visible"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/shortHorizontalMargin"
+            android:layout_toStartOf="@+id/mediaPlayerCloseViewButton"
+            android:layout_toEndOf="@+id/mediaPlayerHeaderImageView"
+            android:id="@+id/streamHeaderInformationLayout"
+            android:layout_centerVertical="true">
+
+            <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Moments.Semibold16"
+                android:id="@+id/mediaPlayerUsernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/streamHeaderLineHeight"
+                android:layout_centerVertical="true"
+                android:gravity="bottom|left"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_gravity="bottom"
+                android:text="" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/streamHeaderLineHeight"
+                android:orientation="horizontal"
+                android:id="@+id/mediaPlayerLocationLayout"
+                android:visibility="gone"
+                android:layout_gravity="top">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:src="@drawable/location"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="top" />
+                <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Moments.Regular14"
+                    android:id="@+id/mediaPlayerLocationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/streamHeaderLineHeight"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/shortHorizontalMargin"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_gravity="top"
+                    android:paddingBottom="2dp"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/mediaPlayerCloseViewButton"
+            android:gravity="center_vertical|right"
+            android:src="@drawable/stop_animated"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/shortVerticalMargin">
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            style="@style/Moments.Semibold16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@color/buttonRed"
+            android:layout_marginRight="@dimen/shortHorizontalMargin"
+            android:id="@+id/mediaPlayerLiveTextView"
+            android:text="@string/live"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/yellowTransparent84"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/mediaPlayerHeaderWatchersCountLayout"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+
+
+            <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+                style="@style/Moments.Semibold16.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaPlayerWatchersCountTextView"
+                android:text="0"
+                />
+            <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+                style="@style/Moments.Semibold16.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/shortHorizontalMargin"
+                android:text="@string/watching"
+                android:id="@+id/mediaPlayerWatchersTextView" />
+            <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+                style="@style/Moments.Semibold16.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaPlayerStreamTitle"
+                android:paddingLeft="@dimen/shortHorizontalMargin" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/imageFrameSize"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:animateLayoutChanges="true"
+        android:id="@+id/mediaPlayerHeaderWatchingUsersLayout"
+        >
+        <View
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:id="@+id/mediaPlayerHeaderWatchingUsersPlaceholder"/>
+    </LinearLayout>
+</LinearLayout>

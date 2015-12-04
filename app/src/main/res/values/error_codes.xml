@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="generic_error">0</integer>
+    <integer name="user_not_available">1</integer>
+</resources>

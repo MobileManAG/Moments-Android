@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/commentsRowHeight"
+    android:id="@+id/mediaPlayerHeaderView"
+    >
+    <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Moments.Semibold16"
+        android:id="@+id/commentListPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/streamHeaderLineHeight"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/imageFrameSize"
+        android:background="@color/black54"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/streamHeaderInformationLayout"
+        android:background="@color/black54"
+        android:layout_centerVertical="true">
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/Moments.Semibold16.Blue"
+            android:id="@+id/commentListUsernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/streamHeaderLineHeight"
+            android:text="Thie is me"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/imageFrameSize" />
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/Moments.Semibold16"
+            android:id="@+id/commentListCommentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WOW!!!"
+            android:paddingLeft="@dimen/shortHorizontalMargin"
+            android:paddingRight="@dimen/shortHorizontalMargin"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/mediaPlayerHeaderImageView"
+        android:layout_width="@dimen/smallImageFrameSize"
+        android:layout_height="@dimen/smallImageFrameSize"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user" />
+</RelativeLayout>

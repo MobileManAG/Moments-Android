@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Moments</string>
+    <string name="share_subject">Watch This. It\'s Live!</string>
+
+    <!--
+         These strings are arranged in particular order
+         so their indicies match the FILTER_XXX constants
+         in Filters.java. Use to populate a Spinner selector
+    -->
+    <string-array name="camera_filter_names">
+        <item>Normal</item>
+        <item>Black &amp; white</item>
+        <item>Night Mode</item>
+        <item>Chroma Key</item>
+        <item>Blur</item>
+        <item>Sharpen</item>
+        <item>Edge detect</item>
+        <item>Emboss</item>
+        <item>Squeeze</item>
+        <item>Twirl</item>
+        <item>Tunnel</item>
+        <item>Bulge</item>
+        <item>Dent</item>
+        <item>Fisheye</item>
+        <item>Stretch</item>
+        <item>Mirror</item>
+    </string-array>
+
+    <!--
+         These strings also must be preserved in order
+         so their indicies match those of the hardware
+         Cameras in Camera.open(i). Also note, choosing
+         cameras by name is silly for a user. Consider
+         using a toggle button!
+    -->
+    <string-array name="camera_names">
+        <item>Rear</item>
+        <item>Front</item>
+    </string-array>
+
+    <!-- BroadcastFragment -->
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="live">LIVE</string>
+    <string name="share_broadcast">Share Broadcast</string>
+    <string name="buffering">Buffering...</string>
+    <string name="title_activity_broadcast">BroadcastActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="effects_chooser_title">Effects</string>
+    <string name="error_no_recorderconfig">You must provide a RecorderConfig object before starting the BroadcastActivity. See Kickflip#setRecorderConfig</string>
+    <string name="error_no_broadcastlistener">You must provide a BroadcastListener</string>
+
+    <string name="action_broadcast">Broadcast</string>
+    <string name="fetch_oauth_creds">Fetch OAuth Credentials</string>
+
+    <!-- StreamListFragment strings displayed when ListView is empty -->
+    <string name="no_network">Unable to contact the server</string>
+    <string name="no_broadcasts">You don\'t have any broadcasts… yet!</string>
+    <string name="stream_flagged">Stream flagged</string>
+    <string name="dialog_title_not_ready">One Sec...</string>
+    <string name="dialog_msg_not_ready">We\'re still registering your Kickflip account. Try again in a few seconds.</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="facebook_app_id">APP_ID</string>
+    <string-array name="settingsOptions">
+        <item>My friends</item>
+        <item>My Moments</item>
+        <item>Share</item>
+        <item>Logout</item>
+<!--        <item>Video Settings</item> -->
+    </string-array>
+    <string name="shareAppInformation">Check out Moments. An app for live broadcasting to your friends. Download the app for iPhone http://tinyurl.com/nw6jlzn or Android http://tinyurl.com/oqb94nd</string>
+    <string name="shareAppDialogTitle">Share Moments</string>
+    <string name="missedCallNotification">Missed live moments from</string>
+    <string name="missedCallNotificationTitle">just broadcasted a moment</string>
+    <string name="sharingLiveMoments">Sharing live moments...</string>
+    <string name="buttonPass">PASS</string>
+    <string name="buttonWatch">WATCH</string>
+    <string name="loginWithFB">Login with Facebook</string>
+    <string name="termsOfServices">By continuing you indicate to have read and agreed on the <a href="http://yourserver/tos.html">Terms of Services</a></string>
+    <string name="notifyingFriends">Notifying friends...</string>
+    <string name="watching">watching</string>
+    <string name="saySomething">Say something...</string>
+    <string name="postOn">Post: On</string>
+    <string name="postOff">Post: Off</string>
+    <string name="somewhereIn">Somewhere in</string>
+    <string name="blockUser">Block friend</string>
+    <string name="unblockUser">Unblock friend</string>
+    <string name="blocked">Blocked</string>
+    <string name="newFriend">NEW</string>
+    <string name="userBlockedSuccessfully">was blocked successfully.</string>
+    <string name="userUnblockedSuccessfully">was unblocked successfully.</string>
+    <string name="broadcastStartedComment">Broadcast has begun.</string>
+    <string name="endBroadcastConfirmation">Are you sure you want to end the moment?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="missingPrivilegesInformation">Your account is missing some privileges, please re-login.</string>
+    <string name="startBroadcast">Start broadcast</string>
+    <string name="noInternetConnection">No internet connection...</string>
+    <string name="broadcastingEnded">Broadcasting ended</string>
+    <string name="watcherJoined">joined</string>
+    <string name="watcherLeft">left</string>
+    <string name="tryingToReconnect">Trying to reconnect...</string>
+    <string name="bandwidthTooLow">Bandwidth too low,\ntrying to reconnect</string>
+    <string name="cancel">Cancel</string>
+    <string name="ignore">Ignore</string>
+    <string name="retry">Retry</string>
+    <string name="replay">Replay</string>
+    <string name="deleteStreamConfirmation">Are you sure you want to delete your moment?</string>
+    <string name="isLiveSuffix">is LIVE</string>
+    <string name="unknownError">Server error occurred</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/myFriendsRowHeight"
+    android:background="@color/whiteInactive"
+    >
+
+    <ImageView
+        android:id="@+id/streamListUserAvatarImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/shortVerticalMargin"
+        android:layout_marginBottom="@dimen/shortVerticalMargin"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        />
+
+    <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Moments.Regular20"
+        android:id="@+id/streamListUsernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Mayers"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:layout_marginLeft="@dimen/shortHorizontalMargin"
+        android:layout_toStartOf="@+id/liveButton"
+        android:layout_toEndOf="@+id/streamListUserAvatarImageView" />
+
+    <com.mobileman.moments.android.frontend.custom.ButtonCustomFont
+        style="@style/Moments.Semibold20.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonMinimumHeight"
+        android:text="@string/buttonWatch"
+        android:id="@+id/liveButton"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@drawable/black_focused_gray"
+        android:background="@color/yellowTransparent84"
+        android:layout_marginTop="@dimen/shortVerticalMargin"
+        android:layout_marginBottom="@dimen/shortVerticalMargin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+
+</RelativeLayout>

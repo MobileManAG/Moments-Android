@@ -1,0 +1,117 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.mobileman.moments.android">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<!-- unlock screen for incoming call permission -->
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+<!-- needed for Parse -->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+<permission android:protectionLevel="signature"
+    android:name="com.mobileman.moments.android.permission.C2D_MESSAGE" />
+<uses-permission android:name="com.mobileman.moments.android.permission.C2D_MESSAGE" />
+
+
+<uses-feature
+    android:name="android.hardware.camera.front"
+    android:required="false" />
+
+<application
+    android:allowBackup="true"
+    android:label="@string/app_name"
+    android:icon="@drawable/ic_launcher"
+    android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+    android:name=".MomentsApplication"
+    >
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+    <activity android:name="com.facebook.FacebookActivity"
+        android:configChanges=
+            "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:label="@string/app_name" />
+
+    <activity
+        android:name=".frontend.activity.MainActivity"
+        android:label="@string/app_name"
+        android:windowSoftInputMode="adjustResize"
+        android:icon="@drawable/ic_launcher"
+        android:screenOrientation="portrait">
+
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+        </intent-filter>
+    </activity>
+
+
+    <activity
+        android:name=".frontend.activity.IncomingCallActivity"
+        android:keepScreenOn="true"
+        android:screenOrientation="portrait">
+
+    </activity>
+
+    <activity
+        android:name=".frontend.activity.BroadcastActivity"
+        android:keepScreenOn="true"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".frontend.activity.MediaPlayerActivity"
+        android:screenOrientation="portrait"
+        android:keepScreenOn="true"
+        android:windowSoftInputMode="adjustPan"
+        />
+
+    <service android:name="com.parse.PushService" />
+    <receiver android:name="com.parse.ParseBroadcastReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <action android:name="android.intent.action.USER_PRESENT" />
+        </intent-filter>
+    </receiver>
+    <receiver android:name="com.mobileman.moments.android.MomentsPushBroadcastReceiver"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="com.parse.push.intent.RECEIVE" />
+            <action android:name="com.parse.push.intent.DELETE" />
+            <action android:name="com.parse.push.intent.OPEN" />
+        </intent-filter>
+    </receiver>
+    <receiver android:name="com.parse.GcmBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND">
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+            <category android:name="com.mobileman.moments.android" />
+        </intent-filter>
+    </receiver>
+    <receiver android:name=".backend.service.NetworkStateListener">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
+
+</application>
+
+</manifest>

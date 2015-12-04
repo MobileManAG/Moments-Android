@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center|top"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/moments_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/splash"
+        android:id="@+id/splashLogo"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="center" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black54"
+            android:id="@+id/loginButton"
+            android:textSize="@dimen/buttonTextSize"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/shortVerticalMargin"
+            android:paddingBottom="@dimen/shortVerticalMargin"
+            android:text="@string/loginWithFB"
+            android:layout_gravity="center" />
+
+<!--        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+-->
+
+    </FrameLayout>
+    <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+        style="@style/Moments.Regular12"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/termsOfServices"
+        android:id="@+id/termsOfServicesTextView"
+        android:gravity="center_horizontal|bottom"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</LinearLayout>

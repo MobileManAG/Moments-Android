@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text">#ff221f1f</color>
+    <color name="text_subdued">#ff615e5c</color>
+    <color name="window_bg">#ffd4cece</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="kickflip_green">#47a447</color>
+    <color name="kickflip_green_shadow">#ff397b39</color>
+    <color name="kickflip_white">#ffffffff</color>
+
+    <color name="kickflip_green_shade_2">#2B642B</color>
+    <color name="kickflip_green_shade_3">#4DB14D</color>
+    <color name="kickflip_green_shade_4">#68F068</color>
+
+<!--    <color name="previewOverlayColor">#44000000</color> -->
+    <color name="buttonRed">#fc8076</color>
+    <color name="buttonRedTransparent84">#D6fc8076</color>
+    <color name="whiteInactive">#29FFFFFF</color>
+    <color name="settingsWhiteBackground">#9AFFFFFF</color>
+    <color name="yellowTransparent84">#D6fbd544</color>
+    <color name="greenTransparent84">#D61bb180</color>
+    <color name="transparentBlue84">#D65d9ed1</color>
+    <color name="momentsBlue">#5d9ed1</color>
+
+    <color name="black12">#20000000</color>
+    <color name="black54">#86000000</color>
+    <color name="black87">#DE000000</color>
+</resources>

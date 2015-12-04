@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/buttonRowHeight"
+    >
+
+
+    <ImageView
+        android:id="@+id/myFriendsListItemAvatarImageView"
+        android:layout_width="@dimen/imageFrameSize"
+        android:layout_height="@dimen/imageFrameSize"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@+id/myFriendsListItemAvatarImageView"
+        android:id="@+id/streamHeaderInformationLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/Moments.Regular20.Black"
+            android:id="@+id/myFriendsListItemUsernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/streamHeaderLineHeight"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            />
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/Moments.Regular12"
+            android:id="@+id/myFriendsListItemUsernameInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/streamHeaderLineHeight"
+            android:layout_marginLeft="@dimen/shortHorizontalMargin"
+            android:text=""
+            android:textColor="@android:color/holo_red_light"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            />
+        <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+            style="@style/Moments.Semibold16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myFriendsListItemBlockUserTextView"
+            android:text="•••"
+            android:visibility="invisible"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+         />
+
+
+    </LinearLayout>
+    <com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+        style="@style/Moments.Semibold16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_btn_bg"
+        android:id="@+id/myFriendsListItemBlockUnblockButtonTextView"
+        android:text="@string/blockUser"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/shortVerticalMargin"
+        android:paddingBottom="@dimen/shortVerticalMargin"
+        android:visibility="gone"
+        android:gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

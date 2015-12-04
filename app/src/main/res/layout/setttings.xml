@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobileman.moments.android.frontend.SlidingRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/settingsWhiteBackground"
+    >
+
+    <include layout="@layout/logo"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsListViewDividerHeight"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/logoView"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/settingsListUpperDivider"
+        />
+
+    <ListView
+        android:id="@+id/settingsOptionsList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="@dimen/settingsListViewDividerHeight"
+        android:layout_below="@+id/settingsListUpperDivider"
+         />
+</com.mobileman.moments.android.frontend.SlidingRelativeLayout>

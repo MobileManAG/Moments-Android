@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobileman.moments.android.frontend.custom.TextViewCustomFont
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Moments.Regular20.Black"
+    android:id="@+id/settingsListRowText"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/buttonRowHeight"
+    android:gravity="center"
+    android:textColor="@drawable/black_focused_gray"
+    android:text="Logout"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    />

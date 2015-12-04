@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/window_bg</item>
+        <item name="android:actionBarStyle">@style/KFActionBar</item>
+        <item name="android:actionMenuTextColor">@color/kickflip_white</item>
+        <item name="android:windowActionBarOverlay">false</item>
+    </style>
+
+    <style name="KFActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/kickflip_green</item>
+        <item name="android:titleTextStyle">@style/KFActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="KFActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/kickflip_white</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="KFEmptyListText">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Moments" parent="@android:style/TextAppearance">
+    </style>
+
+
+    <style name="Moments.Semibold34">
+        <item name="android:textSize">@dimen/style34</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Semibold24">
+        <item name="android:textSize">@dimen/style24</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Semibold24.Blue">
+        <item name="android:textColor">@color/momentsBlue</item>
+    </style>
+    <style name="Moments.Semibold20">
+        <item name="android:textSize">@dimen/style20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Semibold20.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="Moments.Semibold24.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="Moments.Semibold16">
+        <item name="android:textSize">@dimen/style16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Semibold16.Black">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:lineSpacingExtra">@dimen/style2</item>
+    </style>
+    <style name="Moments.Semibold16.Blue">
+        <item name="android:textColor">@color/momentsBlue</item>
+        <item name="android:lineSpacingExtra">@dimen/style2</item>
+    </style>
+    <style name="Moments.Semibold16.Red">
+        <item name="android:textColor">@color/buttonRed</item>
+        <item name="android:lineSpacingExtra">@dimen/style2</item>
+    </style>
+    <style name="Moments.Regular20">
+        <item name="android:textSize">@dimen/style20</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Regular20.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="Moments.Regular16">
+        <item name="android:textSize">@dimen/style16</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Regular12">
+        <item name="android:textSize">@dimen/style12</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Moments.Regular14">
+        <item name="android:textSize">@dimen/style14</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
